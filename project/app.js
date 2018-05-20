@@ -1,11 +1,11 @@
 App({
   onLaunch: function () {
     this.login().then(res => {
-      console.log(res)
+      this.getUserInfo()
     })
-    this.getUserInfo()
   },
   // 登录
+  // 若用户满足一定条件，则可以用 wx.login 获取到的 code 直接换到 unionId
   login() {
     return new Promise((resolve, reject) =>{
       wx.login({
@@ -17,6 +17,7 @@ App({
     })
   },
   // 获取用户信息
+  // wx.getUserInfo 不需要依赖 wx.login 就能调用得到数据
   getUserInfo() {
     wx.getSetting({
       success: res => {
@@ -43,6 +44,6 @@ App({
     })
   },
   globalData: {
-    isOnLaunch: false
+    isOnLaunch: false // 使用该变量来标示 onLaunch 中的异步请求是否完成（登录、获取用户信息）
   }
 })
