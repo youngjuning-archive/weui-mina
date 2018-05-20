@@ -1,0 +1,17 @@
+<block wx:if="{{showActionSheet}}">
+  <view class="weui-mask weui-animate-fade-in" bindtap="onCancel"></view>
+  <view class="weui-actionsheet weui-animate-slide-up">
+    <view class="weui-actionsheet__menu" style="color:{{color}}">
+      <block wx:for="{{itemList}}" wx:key="{{index}}">
+        <view class="weui-actionsheet__cell"
+          data-index="{{index}}"
+          bindtap="onTap">{{item}}</view>
+      </block>
+      <slot></slot>
+    </view>
+    <view class="weui-actionsheet__action">
+      <view class="weui-actionsheet__cell"
+        bindtap="onCancel">取消</view>
+    </view>
+  </view>
+</block>

@@ -1,0 +1,14 @@
+<block wx:if="{{showWelcome}}">
+  <view class="weui-mask weui-animate-fade-in"></view>
+  <view class="weui-dialog weui-animate-fade-in">
+    <view class="weui-dialog__hd">
+      <view class="weui-dialog__title">{{title}}</view>
+    </view>
+    <view class="weui-dialog__bd">{{content}}</view>
+    <view class="weui-dialog__ft">
+      <button
+        class="weui-dialog__btn weui-dialog__btn_primary"
+        open-type="getUserInfo" bindgetuserinfo="getUserInfo">确定</button>
+    </view>
+  </view>
+</block>

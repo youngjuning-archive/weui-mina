@@ -2,7 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/wxlogin/index",
-    "pages/wxparse/index"
+    "pages/wxparse/index",
+    "pages/webview/index",
+    "pages/welcome/index",
+    "pages/actionsheet/index",
+    "pages/better-progress/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#000",

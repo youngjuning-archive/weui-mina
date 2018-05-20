@@ -1,0 +1,87 @@
+/* css3 关键帧动画 */
+@keyframes a {
+  0% {
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@keyframes c {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/* css3动画 */
+.weui-animate-fade-in {
+  -webkit-animation: c ease .3s forwards;
+  animation: c ease .3s forwards;
+}
+.weui-animate-slide-up {
+  -webkit-animation: a ease .3s forwards;
+  animation: a ease .3s forwards;
+}
+/* weui.js 遮罩层 */
+.weui-mask {
+  background: rgba(0,0,0,.6);
+}
+.weui-mask, .weui-mask_transparent {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+/* actionsheet主样式 */
+.weui-actionsheet {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 5000;
+  width: 100%;
+  background-color: #efeff4;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s,-webkit-transform .3s;
+}
+.weui-actionsheet__menu {
+  background-color: #fff;
+}
+.weui-actionsheet__cell {
+  position: relative;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 18px;
+}
+.weui-actionsheet__cell:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #d9d9d9;
+  color: #d9d9d9;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+}
+
+.weui-actionsheet__action {
+  margin-top: 6px;
+  background-color: #fff;
+}

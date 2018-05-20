@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "better-progress": "/components/better-progress/index"
+  },
+  "navigationBarTitleText":"年度进度条"
+}

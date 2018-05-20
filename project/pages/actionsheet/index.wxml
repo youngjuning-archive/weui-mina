@@ -1,0 +1,10 @@
+<actionsheet
+  itemList="{{itemList}}"
+  showActionSheet="{{showActionSheet}}"
+  bindselect="select"
+  bindcancel="cancel">
+    <button type="default" open-type="share" plain>分享给朋友</button>
+  </actionsheet>
+<view class="weui-btn-area">
+  <button type="primary" class="weui-btn" bindtap="btntap">显示ActionSheet</button>
+</view>

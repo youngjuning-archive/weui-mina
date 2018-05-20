@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "welcome": "/components/welcome/index"
+  },
+  "navigationBarTitleText":"小程序欢迎弹窗"
+}

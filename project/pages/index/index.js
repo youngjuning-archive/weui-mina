@@ -4,7 +4,10 @@ Page({
   data: {
     btns: [
       {url:'/pages/wxparse/index',text:'wxparse组件'},
-      {url:'/pages/wxlogin/index',text:'wxlogin组件'}
+      {url:'/pages/wxlogin/index',text:'wxlogin组件'},
+      {url:'/pages/welcome/index',text:'welcome组件'},
+      {url:'/pages/actionsheet/index',text:'actionsheet组件'},
+      {url:'/pages/better-progress/index',text:'better-progress组件'}
     ]
   },
   onLoad: function (options) {

@@ -3,7 +3,7 @@ Component({
     logo: String,
     authorizeText: {
       type: String,
-      value: '我们申请获取一下权限：获得你的公开信息（昵称、头像等）'
+      value: '我们申请获取以下权限：获得你的公开信息（昵称、头像等）'
     },
     confirmText: {
       type: String,

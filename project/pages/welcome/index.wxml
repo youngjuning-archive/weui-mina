@@ -1,0 +1,9 @@
+<welcome
+  showWelcome="{{showWelcome}}"
+  title="欢迎光临"
+  content="路漫漫其修远兮，吾将上下而求索"
+  bindgetuserinfo="getUserInfo">
+</welcome>
+<view>
+  这就内容了
+</view>

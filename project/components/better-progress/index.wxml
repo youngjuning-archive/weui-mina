@@ -1,0 +1,5 @@
+<view class="progress" style="background-color:{{progressBackground}};height:{{progressHeight}};font-size:{{fontSize}}">
+  <view class="progress-bar {{progressBarStriped?'progressBarStriped':''}} {{progressBarAnimated?'progressBarAnimated':''}}"
+  style="background-color:{{progressBarBackground}};width: {{percentage}}%">{{percentage}}%</view>
+  <slot></slot>
+</view>
