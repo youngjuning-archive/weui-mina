@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/wxlogin/index",
+    "pages/wxparse/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "weui-mina",
+    "backgroundColor": "#e5e5e5",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  }
+}

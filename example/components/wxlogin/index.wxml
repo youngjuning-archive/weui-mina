@@ -1,0 +1,22 @@
+<view class="container">
+  <block wx:if="{{!isLoaded}}">
+    <view class="loading-box">
+      <image class="loading-img" src="./images/loading.gif"></image>
+    </view>
+  </block>
+  <block wx:else>
+    <image class="title" src="{{logo}}" wx:if="{{logo}}"></image>
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <open-data type="userAvatarUrl" class="logo"></open-data>
+        <image class="wave" src="./images/wave.png" mode="aspectFill"></image>
+        <image class="wave wave-bg" src="./images/wave.png" mode="aspectFill"></image>
+      </view>
+      <view class="bd">
+        <view class="smalltitle">{{authorizeText}}</view>
+        <button  class="confirm-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">{{confirmText}}</button>
+        <text class="copyright">{{copyright}}</text>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"登录授权",
+  "usingComponents": {
+    "wxlogin": "../../components/wxlogin/index"
+  }
+}
