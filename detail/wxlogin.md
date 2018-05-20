@@ -42,3 +42,7 @@
 ## 登录流
 
 组件封装了登录授权的按钮，但是整个登录流程不是一个组件就能搞定的，需要配合页面逻辑、app.js 来共同实现，你可以参考我的 demo 来完成登录流程。
+
+## demo
+
+![](http://cdn.wakeuptocode.me/wxlogin.gif)
