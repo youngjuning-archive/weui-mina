@@ -1,4 +1,4 @@
-<view class="container">
+<view class="container" style="background-color:{{backgroundColor}}">
   <block wx:if="{{!isLoaded}}">
     <view class="loading-box">
       <image class="loading-img" src="./images/loading.gif"></image>
@@ -14,7 +14,7 @@
       </view>
       <view class="bd">
         <view class="smalltitle">{{authorizeText}}</view>
-        <button  class="confirm-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">{{confirmText}}</button>
+        <button class="confirm-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="background-color:{{backgroundColor}}">{{confirmText}}</button>
         <text class="copyright">{{copyright}}</text>
       </view>
     </view>

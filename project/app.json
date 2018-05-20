@@ -9,7 +9,7 @@
     "pages/better-progress/index"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#000",
+    "navigationBarBackgroundColor": "#009dd9",
     "backgroundTextStyle": "dark",
     "navigationBarTitleText": "weui-mina",
     "backgroundColor": "#e5e5e5",

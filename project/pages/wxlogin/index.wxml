@@ -1,1 +1,3 @@
-<wxlogin bindgetuserinfo="getUserInfo"></wxlogin>
+<wxlogin
+  backgroundColor="#009dd9"
+  bindgetuserinfo="getUserInfo"></wxlogin>

@@ -4,12 +4,13 @@
 
 ## 组件属性
 
-| 属性名        | 类型   | 默认值   | 说明                 | 必须 |
-| ------------- | ------ | -------- | -------------------- | ---- |
-| logo          | String |          | 顶部logo，是图片地址 | 否   |
-| authorizeText | String | ...      | 授权提示文字         | 否   |
-| confirmText   | String | 微信登录 | 授权按钮文字         | 否   |
-| copyright     | String |          | 底部版权信息         | 否   |
+| 属性名          | 类型   | 默认值   | 说明                 | 必须 |
+| --------------- | ------ | -------- | -------------------- | ---- |
+| logo            | String |          | 顶部logo，是图片地址 | 否   |
+| authorizeText   | String | ...      | 授权提示文字         | 否   |
+| confirmText     | String | 微信登录 | 授权按钮文字         | 否   |
+| copyright       | String |          | 底部版权信息         | 否   |
+| backgroundColor | String | #2DC799  | 背景和按钮的颜色     | 否     |
 
 ## 组件事件
 

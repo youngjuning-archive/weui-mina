@@ -12,6 +12,10 @@ Component({
     copyright: {
       type: String,
       value: '欢迎使用 weui-mina 框架@youngjuning'
+    },
+    backgroundColor: {
+      type: String,
+      value: '#2DC799'
     }
   },
   data: {
