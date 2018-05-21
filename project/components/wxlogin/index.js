@@ -1,6 +1,10 @@
 Component({
   properties: {
     logo: String,
+    title: {
+      type: String,
+      value: 'WeUI Mina'
+    },
     wxlogo: {
       type: String,
       value: './images/wxlogo.jpg'

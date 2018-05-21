@@ -1,4 +1,5 @@
 <wxlogin
-  backgroundColor="#009dd9"
+  title="每日微诗词"
   wxlogo="/pages/wxlogin/images/logo.jpg"
+  backgroundColor="#009dd9"
   bindgetuserinfo="getUserInfo"></wxlogin>

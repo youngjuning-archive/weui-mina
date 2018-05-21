@@ -69,7 +69,13 @@ page{
   opacity: 0;
   animation: show 2.5s cubic-bezier(0.19, 1, 0.22, 1) .5s forwards;
 }
-
+.title.text {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
 .smalltitle{
   position: absolute;
   top: 100rpx;

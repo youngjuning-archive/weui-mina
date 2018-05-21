@@ -5,7 +5,8 @@
     </view>
   </block>
   <block wx:else>
-    <image class="title" src="{{logo}}" wx:if="{{logo}}"></image>
+    <image class="title" src="{{logo}}" wx:if="{{logo && !title}}"></image>
+    <view class="title text" wx:if="{{title}}">{{title}}</view>
     <view class="content">
       <view class="hd" style="transform:rotateZ({{angle}}deg);">
         <open-data wx:if="{{!wxlogo}}" type="userAvatarUrl" class="logo"></open-data>
