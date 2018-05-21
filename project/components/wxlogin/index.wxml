@@ -8,7 +8,8 @@
     <image class="title" src="{{logo}}" wx:if="{{logo}}"></image>
     <view class="content">
       <view class="hd" style="transform:rotateZ({{angle}}deg);">
-        <open-data type="userAvatarUrl" class="logo"></open-data>
+        <open-data wx:if="{{!wxlogo}}" type="userAvatarUrl" class="logo"></open-data>
+        <image wx:if="{{wxlogo}}" src="{{wxlogo}}" class="logo"></image>
         <image class="wave" src="./images/wave.png" mode="aspectFill"></image>
         <image class="wave wave-bg" src="./images/wave.png" mode="aspectFill"></image>
       </view>

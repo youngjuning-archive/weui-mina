@@ -1,6 +1,10 @@
 Component({
   properties: {
     logo: String,
+    wxlogo: {
+      type: String,
+      value: './images/wxlogo.jpg'
+    },
     authorizeText: {
       type: String,
       value: '我们申请获取以下权限：获得你的公开信息（昵称、头像等）'

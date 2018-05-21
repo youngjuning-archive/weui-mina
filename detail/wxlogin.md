@@ -4,13 +4,14 @@
 
 ## 组件属性
 
-| 属性名          | 类型   | 默认值   | 说明                 | 必须 |
-| --------------- | ------ | -------- | -------------------- | ---- |
-| logo            | String |          | 顶部logo，是图片地址 | 否   |
-| authorizeText   | String | ...      | 授权提示文字         | 否   |
-| confirmText     | String | 微信登录 | 授权按钮文字         | 否   |
-| copyright       | String |          | 底部版权信息         | 否   |
-| backgroundColor | String | #2DC799  | 背景和按钮的颜色     | 否     |
+| 属性名          | 类型   | 默认值   | 说明                                     | 必须 |
+| --------------- | ------ | -------- | ---------------------------------------- | ---- |
+| logo            | String |          | 顶部logo，是图片地址                     | 否   |
+| wxlogo          | String | ...      | 一定要是绝对路径，不写的话会显示用户头像 | 否   |
+| authorizeText   | String | ...      | 授权提示文字                             | 否   |
+| confirmText     | String | 微信登录 | 授权按钮文字                             | 否   |
+| copyright       | String |          | 底部版权信息                             | 否   |
+| backgroundColor | String | #2DC799  | 背景和按钮的颜色                         | 否   |
 
 ## 组件事件
 
@@ -34,6 +35,7 @@
 
 ```html
 <wxlogin
+  wxlogo="/pages/wxlogin/images/logo.jpg"
   authorizeText="我们申请获取以下权限：获得你的公开信息（昵称、头像等）"
   confirmText="授权登录"
   copyright="&copy; 2018 某某某公司"
