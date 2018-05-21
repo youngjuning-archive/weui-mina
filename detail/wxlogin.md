@@ -4,14 +4,15 @@
 
 ## 组件属性
 
-| 属性名          | 类型   | 默认值   | 说明                                     | 必须 |
-| --------------- | ------ | -------- | ---------------------------------------- | ---- |
-| logo            | String |          | 顶部logo，是图片地址                     | 否   |
-| wxlogo          | String | ...      | 一定要是绝对路径，不写的话会显示用户头像 | 否   |
-| authorizeText   | String | ...      | 授权提示文字                             | 否   |
-| confirmText     | String | 微信登录 | 授权按钮文字                             | 否   |
-| copyright       | String |          | 底部版权信息                             | 否   |
-| backgroundColor | String | #2DC799  | 背景和按钮的颜色                         | 否   |
+| 属性名          | 类型   | 默认值   | 说明                                         | 必须 |
+| --------------- | ------ | -------- | -------------------------------------------- | ---- |
+| logo            | String | ...      | 图片logo，是图片地址                         | 否   |
+| title           | String | ...      | 文字logo，如果title和logo同时存在，显示title | 否   |
+| wxlogo          | String | ...      | 一定要是绝对路径，不写的话会显示用户头像     | 否   |
+| authorizeText   | String | ...      | 授权提示文字                                 | 否   |
+| confirmText     | String | 微信登录 | 授权按钮文字                                 | 否   |
+| copyright       | String |          | 底部版权信息                                 | 否   |
+| backgroundColor | String | #2DC799  | 背景和按钮的颜色                             | 否   |
 
 ## 组件事件
 
