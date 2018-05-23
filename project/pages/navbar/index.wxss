@@ -1,0 +1,9 @@
+page{
+  height: 100%;
+  font-size: 16px;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.weui-tab__content{
+  padding-top: 60px;
+  text-align: center;
+}

@@ -1,1 +1,33 @@
-<navbar tabs="{{tabs}}"></navbar>
+<view class="weui-tab">
+  <view class="weui-navbar">
+    <block wx:for="{{tabs}}" wx:key="*this">
+      <view id="{{index}}"
+        class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}"
+        bindtap="tabClick">
+        <view class="weui-navbar__title">{{item}}</view>
+      </view>
+    </block>
+    <view class="weui-navbar__slider"
+      style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);width:{{sliderWidth}}px"></view>
+  </view>
+  <swiper
+    class="weui-tab__panel"
+    current="{{activeIndex}}"
+    bindchange="handleSwiperChange">
+      <swiper-item
+        hidden="{{activeIndex != 0}}"
+        class="weui-tab__content">
+        <image src="https://cdn.hk01.com/di/media/images/1231524/org/d959826bbec2ce4ac2eae4d08691af65.jpg/GbOORebbMPTzL67eCc_Ajp2ET7vzA5CBLGaC3Sxmgt0?v=w1440"></image>
+      </swiper-item>
+      <swiper-item
+        hidden="{{activeIndex != 1}}"
+        class="weui-tab__content">
+        <image src="https://cdn.hk01.com/di/media/images/1231524/org/d959826bbec2ce4ac2eae4d08691af65.jpg/GbOORebbMPTzL67eCc_Ajp2ET7vzA5CBLGaC3Sxmgt0?v=w1440"></image>
+      </swiper-item>
+      <swiper-item
+        hidden="{{activeIndex != 2}}"
+        class="weui-tab__content">
+        <image src="https://cdn.hk01.com/di/media/images/1231524/org/d959826bbec2ce4ac2eae4d08691af65.jpg/GbOORebbMPTzL67eCc_Ajp2ET7vzA5CBLGaC3Sxmgt0?v=w1440"></image>
+      </swiper-item>
+  </swiper>
+</view>
