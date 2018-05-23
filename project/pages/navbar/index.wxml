@@ -1,3 +1,4 @@
+<import src="./view.wxml"/>
 <view class="weui-tab">
   <view class="weui-navbar">
     <block wx:for="{{tabs}}" wx:key="*this">
@@ -14,20 +15,12 @@
     class="weui-tab__panel"
     current="{{activeIndex}}"
     bindchange="handleSwiperChange">
-      <swiper-item
-        hidden="{{activeIndex != 0}}"
-        class="weui-tab__content">
-        <image src="https://cdn.hk01.com/di/media/images/1231524/org/d959826bbec2ce4ac2eae4d08691af65.jpg/GbOORebbMPTzL67eCc_Ajp2ET7vzA5CBLGaC3Sxmgt0?v=w1440"></image>
-      </swiper-item>
-      <swiper-item
-        hidden="{{activeIndex != 1}}"
-        class="weui-tab__content">
-        <image src="https://cdn.hk01.com/di/media/images/1231524/org/d959826bbec2ce4ac2eae4d08691af65.jpg/GbOORebbMPTzL67eCc_Ajp2ET7vzA5CBLGaC3Sxmgt0?v=w1440"></image>
-      </swiper-item>
-      <swiper-item
-        hidden="{{activeIndex != 2}}"
-        class="weui-tab__content">
-        <image src="https://cdn.hk01.com/di/media/images/1231524/org/d959826bbec2ce4ac2eae4d08691af65.jpg/GbOORebbMPTzL67eCc_Ajp2ET7vzA5CBLGaC3Sxmgt0?v=w1440"></image>
-      </swiper-item>
+    <swiper-item
+      wx:for="{{views}}"
+      wx:key="{{index}}"
+      hidden="{{activeIndex != index}}"
+      class="weui-tab__content">
+      <template is="view" data="{{...views[index]}}"/>
+    </swiper-item>
   </swiper>
 </view>

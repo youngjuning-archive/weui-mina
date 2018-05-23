@@ -1,0 +1,3 @@
+<template name="view">
+  <image src="{{src}}" mode="widthFix"></image>
+</template>
