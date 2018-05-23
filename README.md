@@ -25,3 +25,14 @@
 - [ ] 优惠券组件
 - [ ] 右划菜单组件
 - [ ] 仿 minUI 加载动画组件
+
+## 已从weui拆分出的样式
+
+- weui-navbar
+- weui-navbar__item
+- weui-navbar__item.weui-bar__item_on
+- weui-navbar__slider
+- weui-navbar__title
+- weui-tab
+- weui-tab__panel
+- weui-tab__content

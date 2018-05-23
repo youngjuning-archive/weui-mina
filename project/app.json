@@ -6,7 +6,8 @@
     "pages/webview/index",
     "pages/welcome/index",
     "pages/actionsheet/index",
-    "pages/better-progress/index"
+    "pages/better-progress/index",
+    "pages/navbar/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#009dd9",
