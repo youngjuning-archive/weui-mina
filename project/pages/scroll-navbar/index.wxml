@@ -1,8 +1,11 @@
 <import src="./view.wxml"/>
 <view class="weui-tab">
-  <scroll-view scroll-x class="weui-navbar">
+  <scroll-view scroll-x
+    scroll-left="{{sliderOffset}}"
+    class="weui-navbar">
     <block wx:for="{{tabs}}" wx:key="*this">
       <view id="{{index}}"
+        style="width: 33.3333%;"
         class="weui-navbar__item weui-navbar__item_scroll {{activeIndex == index ? 'weui-bar__item_on' : ''}}"
         bindtap="tabClick">
         <view class="weui-navbar__title">{{item}}</view>

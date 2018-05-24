@@ -15,7 +15,6 @@ scroll-view{
   width: 100%;
 }
 .weui-navbar__item {
-  width: 33.3333%;
   display: inline-block;
 }
 .weui-tab__content{
