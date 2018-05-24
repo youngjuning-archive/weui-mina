@@ -1,0 +1,25 @@
+<import src="./view.wxml"/>
+<view class="weui-tab">
+  <scroll-view scroll-x class="weui-navbar">
+    <block wx:for="{{tabs}}" wx:key="*this">
+      <view id="{{index}}"
+        class="weui-navbar__item weui-navbar__item_scroll {{activeIndex == index ? 'weui-bar__item_on' : ''}}"
+        bindtap="tabClick">
+        <view class="weui-navbar__title">{{item}}</view>
+        <view class="{{activeIndex == index ? 'weui-navbar__slider' : ''}}"></view>
+      </view>
+    </block>
+  </scroll-view>
+  <swiper
+    class="weui-tab__panel"
+    current="{{activeIndex}}"
+    bindchange="handleSwiperChange">
+    <swiper-item
+      wx:for="{{views}}"
+      wx:key="{{index}}"
+      hidden="{{activeIndex != index}}"
+      class="weui-tab__content">
+      <template is="view" data="{{...views[index]}}"/>
+    </swiper-item>
+  </swiper>
+</view>
