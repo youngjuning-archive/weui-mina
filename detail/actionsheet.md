@@ -50,11 +50,12 @@ itemList、showActionSheet、bindselect 都是必须的，只有 bindcancel 不�
 > 下面的样式放在页面中，注意不要修改，而且 button 组件必须加上 plain 属性
 
 ```css
-actionsheet button{
-  border: none;
-  border-radius: 0;
+button[open-type="share"][plain] {
+  border:none;
+  border-radius:0;
   color:#000000;
 }
+
 actionsheet button:before {
   content: " ";
   position: absolute;
