@@ -33,6 +33,9 @@
 - [ ] 仿 minUI 加载动画组件
 - [ ] 语音播放组件
 - [ ] 圆形进度条组件（模仿ElementUI 或者其他的）
+    - http://www.th7.cn/db/mysql/201702/227996.shtml
+    - http://www.jb51.net/article/101592.htm
+    - https://segmentfault.com/a/1190000013242747
 
 ## 已从weui拆分出的样式
 
