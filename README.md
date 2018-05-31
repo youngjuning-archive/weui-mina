@@ -23,7 +23,6 @@
 > 朋友们有什么好的 idea 可以直接 pr，一个人的精力是有限的，行业的兴盛靠大家
 
 - [x] 仿 [weui.js](https://weui.io/weui.js/) actionsheet 组件
-- [x] 仿 [weui.js](https://weui.io/weui.js/) alert 组件
 - [x] 可滑动tabview（无法用组件实现，页面看navbar）
 - [ ] 仿 微信小程序设置界面
 - [ ] 下拉选择列表重排序组件
@@ -33,6 +32,7 @@
 - [ ] 右划菜单组件
 - [ ] 仿 minUI 加载动画组件
 - [ ] 语音播放组件
+- [ ] 圆形进度条组件（模仿ElementUI 或者其他的）
 
 ## 已从weui拆分出的样式
 
